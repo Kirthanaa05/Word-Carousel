@@ -1,0 +1,43 @@
+html,body{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --bg-main: #5134ff;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1:after{
+  content: "";
+  animation: change infinite 6s;
+  background: var(--bg-main);
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+@keyframes change{
+  0%{
+    content: "cooking";
+  }
+  25%{
+    content: "dogs";
+  }
+  50%{
+    content: "coding";
+  }
+  75%{
+    content: "cricket";
+  }
+  100%{
+    content: "cooking";
+  }
+}
